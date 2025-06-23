@@ -13,8 +13,8 @@ export default function Profile() {
           <div className="profile-img" />
         </div>
         <div className="h-[70vh] flex items-center border-y-[1px] border-gray-point divide-y-[1px] divide-gray-point">
-          <ul className="w-full grid divide-y-[1px] divide-gray-point">
-            <li className="flex flex-col gap-[5px] px-[30px] py-[20px]">
+          <ul className="w-full grid p-[20px] gap-[20px]">
+            <li className="flex flex-col gap-[5px]">
               <Title18>ABOUT ME</Title18>
               <Text14 className="flex gap-[15px]">
                 {aboutMe.map((item, index) => (
@@ -24,7 +24,7 @@ export default function Profile() {
                 ))}
               </Text14>
             </li>
-            <li className="flex flex-col gap-[5px] px-[30px] py-[20px]">
+            <li className="flex flex-col gap-[5px] ">
               <Title18>CHARACTER</Title18>
               <Text14 className="flex gap-[15px]">
                 {characterData.map((item, index) => (
@@ -34,7 +34,7 @@ export default function Profile() {
                 ))}
               </Text14>
             </li>
-            <li className="flex flex-col gap-[5px] px-[30px] py-[20px]">
+            <li className="flex flex-col gap-[5px] ">
               <Title18>EDUCATION</Title18>
               {educationData.map((item) => (
                 <Text14 key={item.id} className="flex gap-[15px]">
@@ -44,7 +44,7 @@ export default function Profile() {
                 </Text14>
               ))}
             </li>
-            <li className="flex flex-col gap-[5px] px-[30px] py-[20px]">
+            <li className="flex flex-col gap-[5px] ">
               <Title18>WORK EXPERIENCE</Title18>
               {workExperienceData.map((item) => (
                 <Text14 key={item.id} className="flex gap-[15px]">
@@ -54,7 +54,7 @@ export default function Profile() {
                 </Text14>
               ))}
             </li>
-            <li className="flex flex-col gap-[5px] px-[30px] py-[20px]">
+            <li className="flex flex-col gap-[5px] ">
               <Title18>LICENSE</Title18>
               {licenseData.map((item) => (
                 <Text14 key={item.id} className="flex gap-[20px]">

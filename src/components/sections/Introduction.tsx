@@ -7,10 +7,10 @@ export default function Introduction() {
     <div id="introduction" className="w-full h-[100vh]">
       <div className="w-[70vw] h-full mx-auto grid grid-cols-[4fr_3fr] justify-center items-center border-x-[1px] border-gray-point divide-x-[1px] divide-gray-point">
         {/* text */}
-        <div className="h-[70vh] flex flex-col border-y-[1px] border-gray-point divide-y-[1px] divide-gray-point">
-          <Title32 className="px-[30px] py-[10px]">{introductionData.title}</Title32>
-          <Title24 className="px-[30px] py-[10px]">{introductionData.subTitle}</Title24>
-          <p className="flex flex-col gap-[10px] px-[30px] py-[20px]">
+        <div className="h-[70vh] flex flex-col border-y-[1px] border-gray-point px-[30px] py-[20px]">
+          <Title32 className="">{introductionData.title}</Title32>
+          <Title24 className="py-[10px]">{introductionData.subTitle}</Title24>
+          <p className="flex flex-col gap-[10px] ">
             {introductionData.list.map((item) => (
               <TextSpan16 key={item.id}>
                 {item.text.split(/(더 쉬운 경험)/g).map((point, index) =>
