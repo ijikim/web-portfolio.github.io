@@ -1,8 +1,8 @@
 export const skillsData = [
   {
-    path: "/images/skills/ps.svg",
+    path: "images/skills/ps.svg",
     title: "Photoshop",
-    star:"⭐⭐⭐⭐⭐",
+    star: "⭐⭐⭐⭐⭐",
     text: [
       "웹디자인 및 각종 배너 이미지 등 다양한 실무 디자인 작업을 수행할 수 있습니다.",
       "픽셀유동화, 브러시, 패치 툴 등 포토샵의 다양한 기능을 활용하여 인물 보정 작업이 가능합니다.",
@@ -13,9 +13,9 @@ export const skillsData = [
   },
 
   {
-    path: "/images/skills/ai.svg",
+    path: "images/skills/ai.svg",
     title: "illustrator",
-    star:"⭐⭐⭐⭐⭐",
+    star: "⭐⭐⭐⭐⭐",
     text: [
       "로고 및 심볼 등 브랜드 아이덴티티 디자인 작업을 수행할 수 있습니다.",
       "아이콘, 인포그래픽, 패턴, 배너 등 다양한 벡터 이미지를 제작할 수 있습니다.",
@@ -26,9 +26,9 @@ export const skillsData = [
     ],
   },
   {
-    path: "/images/skills/xd.svg",
+    path: "images/skills/xd.svg",
     title: "Adobe XD",
-    star:"⭐⭐⭐⭐⭐",
+    star: "⭐⭐⭐⭐⭐",
     text: [
       "UI/UX 설계, 와이어프레임 제작 등 기획 단계에서 필요한 다양한 디자인 작업을 Adobe XD로 수행할 수 있습니다.",
       "컴포넌트와 스타일 가이드를 활용해 디자인 시스템을 구축하고, 일관된 UI를 설계할 수 있습니다.",
@@ -37,9 +37,9 @@ export const skillsData = [
     ],
   },
   {
-    path: "/images/skills/figma.svg",
+    path: "images/skills/figma.svg",
     title: "Figma",
-    star:"⭐⭐⭐⭐⭐",
+    star: "⭐⭐⭐⭐⭐",
     text: [
       "Auto Layout, 컴포넌트, 스타일 가이드 등 다양한 기능을 활용해 UI/UX 디자인 및 기획 단계의 화면을 제작할 수 있습니다.",
       "반복적으로 사용하는 요소는 컴포넌트로 관리하며, 일관된 디자인 시스템을 구축할 수 있습니다.",
@@ -49,9 +49,9 @@ export const skillsData = [
     ],
   },
   {
-    path: "/images/skills/html.svg",
+    path: "images/skills/html.svg",
     title: "HTML5",
-    star:"⭐⭐⭐⭐⭐",
+    star: "⭐⭐⭐⭐⭐",
     text: [
       "웹 접근성을 고려하여 모든 사용자가 편리하게 이용할 수 있는 홈페이지를 만들 수 있습니다.",
       "웹 표준에 맞는 HTML 구조를 설계하고, 시맨틱 태그를 적극적으로 활용해 검색엔진 최적화(SEO)와 유지보수성을 높입니다.",
@@ -61,9 +61,9 @@ export const skillsData = [
     ],
   },
   {
-    path: "/images/skills/css.svg",
+    path: "images/skills/css.svg",
     title: "CSS3",
-    star:"⭐⭐⭐⭐⭐",
+    star: "⭐⭐⭐⭐⭐",
     text: [
       "다양한 CSS 속성을 이해하고, 디자인 요구에 맞게 스타일을 구현할 수 있습니다.",
       "각각의 스타일을 체계적으로 구분하여 레이아웃을 설계하며, 반응형 웹페이지를 제작할 수 있습니다.",
@@ -73,9 +73,9 @@ export const skillsData = [
     ],
   },
   {
-    path: "/images/skills/scss.svg",
+    path: "images/skills/scss.svg",
     title: "SCSS",
-    star:"⭐⭐⭐",
+    star: "⭐⭐⭐",
     text: [
       "SCSS 문법을 활용해 스타일 중첩(Nesting)과 변수, 믹스인, 상속 등 다양한 기능을 적용할 수 있습니다.",
       "복잡한 스타일 구조를 효율적으로 관리하며, CSS로 컴파일해 실제 프로젝트에 바로 적용 가능합니다.",
@@ -83,9 +83,9 @@ export const skillsData = [
     ],
   },
   {
-    path: "/images/skills/tailwind.svg",
+    path: "images/skills/tailwind.svg",
     title: "TailwindCSS",
-    star:"⭐⭐⭐⭐",
+    star: "⭐⭐⭐⭐",
     text: [
       "Tailwind CSS IntelliSense 확장 프로그램을 설치해 개발 생산성을 높이고, 프로젝트에 즉시 Tailwind를 적용할 수 있습니다.",
       "컬러, 폰트 등 커스텀 변수를 등록하여, 브랜드에 맞는 스타일을 효율적으로 관리할 수 있습니다.",
@@ -93,9 +93,9 @@ export const skillsData = [
     ],
   },
   {
-    path: "/images/skills/js.svg",
+    path: "images/skills/js.svg",
     title: "JavaScript",
-    star:"⭐⭐⭐",
+    star: "⭐⭐⭐",
     text: [
       "자바스크립트의 기본 문법과 동작 원리를 이해하고 있습니다.",
       "함수, 조건문, 반복문 등 주요 문법을 활용해 다양한 동작을 구현할 수 있습니다.",
@@ -105,9 +105,9 @@ export const skillsData = [
     ],
   },
   {
-    path: "/images/skills/jq.svg",
+    path: "images/skills/jq.svg",
     title: "jQuery",
-    star:"⭐⭐⭐",
+    star: "⭐⭐⭐",
     text: [
       "부드러운 동작과 다양한 UI 효과를 구현하기 위해 jQuery를 활용할 수 있습니다.",
       "슬라이드, 페이드, 애니메이션 등 간단한 효과는 함수로 직접 개발이 가능합니다.",
@@ -115,9 +115,9 @@ export const skillsData = [
     ],
   },
   {
-    path: "/images/skills/react.svg",
+    path: "images/skills/react.svg",
     title: "React",
-    star:"⭐⭐⭐⭐",
+    star: "⭐⭐⭐⭐",
     text: [
       "React의 컴포넌트 기반 구조를 이해하고 있으며, JSX를 활용해 다양한 UI를 개발할 수 있습니다.",
       "상태 관리와 이벤트 처리를 통해 동적인 화면을 구현하고, props와 hooks 등 React의 핵심 기능을 실무 프로젝트에 적용할 수 있습니다.",
@@ -127,9 +127,9 @@ export const skillsData = [
     ],
   },
   {
-    path: "/images/skills/vite.svg",
+    path: "images/skills/vite.svg",
     title: "Vite",
-    star:"⭐⭐⭐",
+    star: "⭐⭐⭐",
     text: [
       "Vite를 활용해 빠르고 효율적인 프론트엔드 개발 환경을 구축할 수 있습니다.",
       "프로젝트 초기 설정부터 빌드 등 개발 속도 향상을 위한 주요 기능을 적용할 수 있습니다.",
@@ -138,9 +138,9 @@ export const skillsData = [
     ],
   },
   {
-    path: "/images/skills/ts.svg",
+    path: "images/skills/ts.svg",
     title: "TypeScript",
-    star:"⭐⭐⭐",
+    star: "⭐⭐⭐",
     text: [
       "TypeScript를 활용해 코드의 타입 안정성을 높이고, 런타임 오류를 사전에 예방할 수 있습니다.",
       "인터페이스, 제네릭, 타입 추론 등 다양한 타입 기능을 활용해 더 견고하고 유지보수하기 쉬운 코드를 작성할 수 있습니다.",
@@ -149,9 +149,9 @@ export const skillsData = [
     ],
   },
   {
-    path: "/images/skills/boot.svg",
+    path: "images/skills/boot.svg",
     title: "Bootstrap",
-    star:"⭐⭐⭐⭐",
+    star: "⭐⭐⭐⭐",
     text: [
       "Bootstrap의 기본적인 컴포넌트를 활용할 수 있습니다.",
       "기초적인 레이아웃 구성, 버튼, 폼 등 다양한 UI 요소를 직접 구현할 수 있습니다.",
@@ -160,9 +160,9 @@ export const skillsData = [
     ],
   },
   {
-    path: "/images/skills/swiper.svg",
+    path: "images/skills/swiper.svg",
     title: "Swiper",
-    star:"⭐⭐⭐⭐",
+    star: "⭐⭐⭐⭐",
     text: [
       "Swiper 슬라이드 라이브러리를 활용해 다양한 형태의 이미지 및 콘텐츠 슬라이드를 구현할 수 있습니다.",
       "공식 문서를 참고하여 원하는 옵션과 기능을 자유롭게 커스텀할 수 있습니다.",
@@ -171,9 +171,9 @@ export const skillsData = [
     ],
   },
   {
-    path: "/images/skills/lucide.svg",
+    path: "images/skills/lucide.svg",
     title: "Lucide",
-    star:"⭐⭐⭐⭐",
+    star: "⭐⭐⭐⭐",
     text: [
       "Lucide 아이콘 라이브러리를 프로젝트에 임포트해 다양한 아이콘을 손쉽게 사용할 수 있습니다.",
       "필요에 따라 아이콘의 크기, 색상 등 속성을 자유롭게 커스텀하여 UI에 적용할 수 있습니다.",
@@ -181,9 +181,9 @@ export const skillsData = [
     ],
   },
   {
-    path: "/images/skills/motion-dev.svg",
+    path: "images/skills/motion-dev.svg",
     title: "Motion.Dev",
-    star:"⭐⭐⭐",
+    star: "⭐⭐⭐",
     text: [
       "framer-motion을 활용해 다양한 UI 요소에 애니메이션 효과를 자유롭게 적용할 수 있습니다.",
       "텍스트, 버튼, 이미지, 레이아웃 등 모든 컴포넌트에 동적 효과를 추가할 수 있으며, keyframes, 반복, 이징 등 세부 옵션도 커스텀 가능합니다.",
@@ -192,9 +192,9 @@ export const skillsData = [
     ],
   },
   {
-    path: "/images/skills/git.svg",
+    path: "images/skills/git.svg",
     title: "Git",
-    star:"⭐⭐⭐⭐",
+    star: "⭐⭐⭐⭐",
     text: [
       "Git을 사용해 터미널에서 커밋, 푸시, 풀, 브랜치 생성 등 기본적인 버전 관리 작업을 수행할 수 있습니다.",
       "원격 저장소(GitHub)와 연동하여 프로젝트를 관리하고, 협업을 위한 브랜치 전략도 적용할 수 있습니다.",
@@ -202,9 +202,9 @@ export const skillsData = [
     ],
   },
   {
-    path: "/images/skills/github.svg",
+    path: "images/skills/github.svg",
     title: "GitHub",
-    star:"⭐⭐⭐⭐⭐",
+    star: "⭐⭐⭐⭐⭐",
     text: [
       "GitHub에서 커밋 메시지 규칙을 이해하고, 기본적인 PR 작성과 코드 리뷰 과정을 경험했습니다.",
       "간단한 코드 수정이나 에러는 GitHub 웹 에디터에서 바로 수정해 머지할 수 있습니다.",
