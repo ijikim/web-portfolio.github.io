@@ -1,0 +1,216 @@
+@import "tailwindcss";
+
+/* color-theme */
+@theme inline {
+  --color-white-main: #f6f5f3;
+  --color-black-main: #333333;
+  --color-gray-point: #969490;
+  --color-gray-6: #666666;
+  --color-gray-9: #999999;
+  --color-red-point: #c44d2d;
+}
+
+/* font-face */
+@layer base {
+  @font-face {
+    font-family: "Pretendard";
+    src: url("/fonts/pretendard/Pretendard-ExtraBold.woff2") format("woff2"),
+      url("/fonts/pretendard/Pretendard-ExtraBold.woff") format("woff"),
+      url("/fonts/pretendard/Pretendard-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Pretendard";
+    src: url("/fonts/pretendard/Pretendard-SemiBold.woff2") format("woff2"),
+      url("/fonts/pretendard/Pretendard-SemiBold.woff") format("woff"),
+      url("/fonts/pretendard/Pretendard-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Pretendard";
+    src: url("/fonts/pretendard/Pretendard-Regular.woff2") format("woff2"),
+      url("/fonts/pretendard/Pretendard-Regular.woff") format("woff"),
+      url("/fonts/pretendard/Pretendard-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+/* font Style */
+@layer utilities {
+  .t-eb-48 {
+    font-size: clamp(32px, calc(26.6144px + 1.5656vw), 48px);
+    font-weight: 800;
+  }
+
+  .t-eb-32 {
+    font-size: clamp(24px, calc(21.3062px + 0.7828vw), 32px);
+    font-weight: 800;
+  }
+
+  .t-eb-24,
+  .t-sb-24,
+  .t-r-24 {
+    font-size: clamp(18px, calc(15.9807px + 0.587vw), 24px);
+  }
+  .t-eb-24 {
+    font-weight: 800;
+  }
+  .t-sb-24 {
+    font-weight: 600;
+  }
+  .t-r-24 {
+    font-weight: 400;
+  }
+
+  .t-eb-18,
+  .t-sb-18,
+  .t-r-18 {
+    font-size: clamp(16px, calc(15.3268px + 0.1957vw), 18px);
+  }
+  .t-eb-18 {
+    font-weight: 800;
+  }
+  .t-sb-18 {
+    font-weight: 600;
+  }
+  .t-r-18 {
+    font-weight: 400;
+  }
+
+  .t-eb-16,
+  .t-sb-16,
+  .t-r-16 {
+    font-size: clamp(14px, calc(13.3268px + 0.1957vw), 16px);
+  }
+  .t-eb-16 {
+    font-weight: 800;
+  }
+  .t-sb-16 {
+    font-weight: 600;
+  }
+  .t-r-16 {
+    font-weight: 400;
+  }
+
+  .t-eb-14,
+  .t-sb-14,
+  .t-r-14 {
+    font-size: clamp(12px, calc(11.3268px + 0.1957vw), 14px);
+  }
+  .t-eb-14 {
+    font-weight: 800;
+  }
+  .t-sb-14 {
+    font-weight: 600;
+  }
+  .t-r-14 {
+    font-weight: 400;
+  }
+
+  html {
+    font-family: "Pretendard", system-ui, sans-serif;
+    color: var(--color-black-main);
+  }
+}
+
+/* Class Style */
+@layer utilities {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+    background: url("/images/background/main-bg.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  ul,
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  .hidden-scroll {
+    overflow: auto;
+    scrollbar-width: none; /* 파이어폭스 */
+  }
+  .hidden-scroll::-webkit-scrollbar {
+    display: none; /* 크롬, 엣지, 사파리 */
+  }
+
+  .home-bg {
+    background: url("/images/background/home-bg.jpg") no-repeat center center;
+    background-size: cover;
+  }
+  .contact-bg {
+    background: url("/images/background/contact-bg.png") no-repeat center center;
+    background-size: cover;
+  }
+  .profile-img {
+    background: url("/images/profile/profile.png") no-repeat center center;
+    background-size: contain;
+    aspect-ratio: 3/4;
+    width: 100%;
+    max-width: 350px;
+  }
+  .introduction-img {
+    background: url("/images/introduction/introduction.png") no-repeat center center;
+    background-size: contain;
+    aspect-ratio: 3/4;
+    width: 100%;
+    max-width: 250px;
+  }
+  .emoji {
+    background: url("/images/introduction/emoji-on.png") no-repeat center center;
+    background-size: contain;
+    aspect-ratio: 1;
+    width: 100%;
+    max-width: 80px;
+  }
+
+  .marquee-style {
+    width: 100%;
+    mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+    overflow: hidden;
+  }
+  .animate-marquee {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    animation-name: marquee;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+  }
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-gradient:hover {
+    animation: gradient-move 1s ease-in-out;
+  }
+  @keyframes gradient-move {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-50%);
+    }
+  }
+}
