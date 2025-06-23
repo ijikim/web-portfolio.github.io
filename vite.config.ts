@@ -6,7 +6,7 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react(), tsconfigPaths(), tailwindcss()],
-  base: "/",
+  base: "/web-portfolio.github.io/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
