@@ -1,6 +1,7 @@
 import { titleData } from "@/data/title";
 import { menuData } from "@/data/menu";
-import { Nemu, Point, Title48 } from "@/components/ui/Text-styled";
+import { NavigationSB18, Title48, PointP18, Title32 } from "@/components/ui/Text-styled";
+import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -16,63 +17,56 @@ export default function Home() {
   };
 
   return (
-    <div id="home" className="w-full h-[200vh] grid grid-rows-2 divide-y-[1px] divide-gray-point">
+    <div id="home" className="w-full h-[200vh] grid grid-rows-[1fr_1fr]">
       {/* Home */}
       <div className="w-full home-bg">
-        <div className="w-[70vw] h-full mx-auto flex flex-col justify-center items-center gap-[10px] border-x-[1px] border-gray-point">
+        <div className="w-full h-full flex flex-col justify-center items-center gap-[10px]">
           <Title48>{titleData.title}</Title48>
-          <Point>
+          <PointP18 className="text-gray-point">
             <span className="text-red-point">{titleData.point}</span>
             {titleData.text}
             <span className="!text-black-main">{titleData.name}</span>
-          </Point>
+          </PointP18>
         </div>
       </div>
 
       {/* List */}
       <div className="w-full">
-        <div className="w-[70vw] h-full mx-auto grid grid-cols-[3fr_4fr] border-x-[1px] border-gray-point divide-x-[1px] divide-gray-point">
-          <div className="flex justify-center items-center">
-            <Title48>CONTENTS</Title48>
+        <div className="w-full h-full flex flex-col justify-center items-center gap-[50px]">
+          <div className="flex items-center">
+            <Title32>CONTENTS</Title32>
           </div>
-          <div className="flex justify-center items-center">
-            <ul className="grid gap-[40px]">
+          <div className="flex items-center">
+            <ul className="grid gap-[10px]">
               {menuData.map((item, index) => (
-                <Nemu
+                <NavigationSB18
                   key={item.id}
+                  className="overflow-hidden h-[30px]"
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  style={{
-                    overflow: "hidden",
-                    height: 30,
-                  }}
                 >
-                  <motion.button
-                    type="button"
-                    onClick={() => handleMenuClick(item.path)}
-                    className="bg-transparent border-none outline-none cursor-pointer"
-                    style={{ display: "block" }}
-                    initial="initial"
-                    whileHover="hover"
-                    variants={{
-                      initial: { y: 0 },
-                      hover: { y: "-50%" },
-                    }}
-                    transition={{ type: "spring", stiffness: 400, damping: 25 }}
-                  >
-                    <p className="flex gap-[10px] h-[30px]">
-                      <span>0{index + 1}</span>
-                      <span className="t-eb-24">{item.title}</span>
-                      <span>{item.text}</span>
-                    </p>
-                    <p className="flex gap-[10px] h-[30px] text-red-point">
-                      <span>0{index + 1}</span>
-                      <span className="t-eb-24">{item.title}</span>
-                      <span>{item.text}</span>
-                    </p>
-                  </motion.button>
-                </Nemu>
+                  <Button onClick={() => handleMenuClick(item.path)}>
+                    <motion.div
+                      className="grid grid-rows-[1fr_1fr]"
+                      initial="initial"
+                      whileHover="hover"
+                      variants={{ initial: { y: 0 }, hover: { y: "-50%" } }}
+                      transition={{ type: "spring", stiffness: 400, damping: 25 }}
+                    >
+                      <p className="flex gap-[10px]">
+                        <span>0{index + 1}</span>
+                        <strong>{item.title}</strong>
+                        <span>{item.text}</span>
+                      </p>
+                      <p className="flex gap-[10px] text-red-point">
+                        <span>0{index + 1}</span>
+                        <strong>{item.title}</strong>
+                        <span>{item.text}</span>
+                      </p>
+                    </motion.div>
+                  </Button>
+                </NavigationSB18>
               ))}
             </ul>
           </div>
