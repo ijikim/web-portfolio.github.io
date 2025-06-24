@@ -1,16 +1,16 @@
 import { motion } from "framer-motion";
 import tw from "tailwind-styled-components";
 
-export const Navigation = tw(motion.li)`
+export const Navigation18 = tw(motion.li)`
 t-eb-18`;
 
-export const Nemu = tw(motion.li)`
-t-sb-24`;
+export const NavigationSB18 = tw(motion.li)`
+t-sb-18`;
 
-export const Point = tw(motion.p)`
-t-sb-18 !text-gray-point`;
+export const PointP18 = tw(motion.p)`
+t-sb-18`;
 
-export const PointSpan = tw(motion.span)`
+export const PointSpan14 = tw(motion.span)`
 t-sb-14`;
 
 export const Title48 = tw(motion.h2)`

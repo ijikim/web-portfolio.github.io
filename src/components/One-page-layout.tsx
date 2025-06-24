@@ -7,7 +7,7 @@ import Skills from "@/components/sections/Skills";
 
 export default function OnePageLayout() {
   return (
-    <div className="w-full divide-y-[1px] divide-gray-point">
+    <div className="w-full">
       <Home />
       <Introduction />
       <Profile />

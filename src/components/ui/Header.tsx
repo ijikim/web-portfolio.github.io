@@ -1,6 +1,7 @@
 import { menuData } from "@/data/menu";
 import { useEffect, useState } from "react";
-import { Navigation } from "@/components/ui/Text-styled";
+import { Navigation18 } from "@/components/ui/Text-styled";
+import { Button } from "@/components/ui/button";
 
 export default function Header() {
   const [activeId, setActiveId] = useState(menuData[0].path);
@@ -38,10 +39,10 @@ export default function Header() {
   };
 
   return (
-    <div className="w-full h-[50px] fixed top-0 z-10 border-b-[1px] border-gray-point backdrop-blur">
-      <ul className="w-[70vw] h-full mx-auto flex justify-evenly items-center border-x-[1px] border-gray-point">
+    <div className="w-full h-[50px] fixed top-0 z-10 border-b-[1px] border-gray-point/50 backdrop-blur">
+      <ul className="w-[60vw] h-full mx-auto flex justify-evenly items-center">
         {menuData.map((item) => (
-          <Navigation
+          <Navigation18
             key={item.id}
             animate={{ opacity: activeId === item.path ? 1 : 0.3 }}
             transition={{
@@ -50,14 +51,8 @@ export default function Header() {
             }}
             whileHover={{ opacity: 1 }}
           >
-            <button
-              type="button"
-              onClick={() => handleMenuClick(item.path)}
-              className="bg-transparent border-none outline-none cursor-pointer"
-            >
-              {item.title}
-            </button>
-          </Navigation>
+            <Button onClick={() => handleMenuClick(item.path)}>{item.title}</Button>
+          </Navigation18>
         ))}
       </ul>
     </div>
