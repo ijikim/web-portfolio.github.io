@@ -56,21 +56,21 @@ export default function Skills() {
       </div>
 
       {/* 선택된 기술 표시 */}
-      <div className="w-[80vw] h-[55vh] py-[30px] px-[40px] rounded-xl bg-white/50 overflow-hidden">
+      <div className="w-[80vw] max-w-[1000px] h-[50vh] py-[30px] px-[40px] rounded-xl bg-white/50 overflow-hidden">
         <div className="h-full hidden-scroll">
           <Title32 className="mb-[15px] flex items-center">
-            {selectedIndex !== null ? skillsData[selectedIndex].title : "Click! ⬆️⬆️"}
+            {selectedIndex !== null ? skillsData[selectedIndex].title : "Click!"}
             <TextSpan18 className="ml-[10px]">
-              {selectedIndex !== null ? skillsData[selectedIndex].star : "Click! ⬆️⬆️"}
+              {selectedIndex !== null ? skillsData[selectedIndex].star : "⬆️⬆️"}
             </TextSpan18>
           </Title32>
-          <Text18 className="flex flex-col gap-[10px] ml-[10px]">
+          <Text18 className="flex flex-col gap-[10px]">
             {selectedIndex !== null
-              ? skillsData[selectedIndex].text.map((line, i) => (
-                  <span key={i}>
-                    <strong className="t-sb-18 mr-[10px]">{i + 1}.</strong>
-                    {line}
-                  </span>
+              ? skillsData[selectedIndex].text.map((text, i) => (
+                  <p key={i} className="flex">
+                    <strong className="t-sb-18 mr-[7px]">✏️ </strong>
+                    <span className="block">{text}</span>
+                  </p>
                 ))
               : "선택한 기술의 설명이 여기에 표시됩니다."}
           </Text18>

@@ -161,21 +161,19 @@
     background-size: contain;
     aspect-ratio: 3/4;
     width: 100%;
-    max-width: 350px;
+    min-width: 200px;
   }
   .introduction-img {
     background: url("/images/introduction/introduction.png") no-repeat center center;
     background-size: contain;
     aspect-ratio: 3/4;
-    width: 100%;
-    max-width: 250px;
+    min-width: 180px;
   }
   .emoji {
     background: url("/images/introduction/emoji-on.png") no-repeat center center;
     background-size: contain;
     aspect-ratio: 1;
-    width: 100%;
-    max-width: 80px;
+    width: 60px;
   }
 
   .marquee-style {
