@@ -1,6 +1,6 @@
 import { menuData } from "@/data/menu";
 import { useEffect, useState } from "react";
-import { Navigation18 } from "@/components/ui/Text-styled";
+import { Navigation18, Title18 } from "@/components/ui/Text-styled";
 import { Button } from "@/components/ui/button";
 
 export default function Header() {
@@ -39,8 +39,8 @@ export default function Header() {
   };
 
   return (
-    <div className="w-full h-[50px] fixed top-0 z-10 border-b-[1px] border-gray-point/50 backdrop-blur">
-      <ul className="w-[60vw] h-full mx-auto flex justify-evenly items-center">
+    <div className="w-full h-[50px] fixed top-0 z-10">
+      <ul className="w-[70vw] max-w-[1000px] h-full mx-auto flex justify-between items-center">
         {menuData.map((item) => (
           <Navigation18
             key={item.id}

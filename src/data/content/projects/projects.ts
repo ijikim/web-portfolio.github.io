@@ -1,0 +1,67 @@
+export const projectsData = [
+  {
+    id: 4,
+    title: "한양대학교 에리카 미술치료학과/학과 홈페이지",
+    text: [
+      "프로젝트 목표 : 한양대학교 미술치료학과 홈페이지 기획 · 개발 및 졸업 전시회 작품 수록 및 학과 정보 전달",
+      "프로젝트 기간 : 2025.04 ~ 진행 중",
+      "기여도: 20%",
+      "개발스킬: PhotoShop, Figma, React, Vite, TypeScirpt, TailwindCSS, Git, GitHub, Supabase",
+    ],
+    path: "https://hy-erica-arttherapy.com/",
+    github: "https://github.com/hanyang-art-therapy/frontend/tree/docs/readme",
+    file: "",
+  },
+  {
+    id: 3,
+    title: "몽땅푸딩/푸딩큐레이션 플랫폼",
+    text: [
+      "프로젝트 목표 : 푸딩 맛집 큐레이션 플랫폼 서비스 브랜드 기획 및 페럴렉스 기능 반응형 웹사이트 구현",
+      "프로젝트 기간 : 2025.01 - 2025.02",
+      "기여도: 100%",
+      "개발스킬: PhotoShop, illustrator, Figma, HTML5, CSS3, JavaScript, jQuery, Swiper",
+    ],
+    path: "https://ijikim.github.io/mongttang.github.io/",
+    github: "https://github.com/ijikim/mongttang.github.io",
+    file: "",
+  },
+  {
+    id: 2,
+    title: "PICK THE FIT/나와 패션을 더 가깝게",
+    text: [
+      "프로젝트 목표 : 패션 코디 정보 제공, 쇼핑 서비스 브랜드 기획 및 반응형 웹 사이트 구현",
+      "프로젝트 기간 : 2024.12 - 2025.01",
+      "기여도: 100%",
+      "개발스킬: PhotoShop, illustrator, AdobeXD, HTML5, CSS3, JavaScript, jQuery",
+    ],
+    path: "https://ijikim.github.io/pickthefit.github.io/",
+    github: "https://github.com/ijikim/pickthefit.github.io",
+    file: "",
+  },
+  {
+    id: 1,
+    title: "집소문/따뜻하고 소소한 일상 속의 즐거움",
+    text: [
+      "프로젝트 목표 : 온라인 소품샵 브랜드 기획 및 일반형 웹사이트 구현",
+      "프로젝트 기간 : 2024.10 - 2024.11",
+      "기여도: 100%",
+      "개발스킬: PhotoShop, illustrator, AdobeXD, HTML5, CSS3",
+    ],
+    path: "https://ijikim.github.io/zipsomun.github.io/",
+    github: "https://github.com/ijikim/zipsomun.github.io",
+    file: "",
+  },
+  {
+    id: 0,
+    title: "FRONTEND DEVELOPER KIM IJI/포트폴리오",
+    text: [
+      "프로젝트 목표 : 웹포트폴리오 기획 및 반응형 웹사이트 구현",
+      "프로젝트 기간 : 2025.06 ~ 진행중",
+      "기여도: 100%",
+      "개발스킬: PhotoShop, Figma, React, Vite, TypeScirpt, TailwindCSS, Git, GitHub",
+    ],
+    path: "https://ijikim.github.io/web-portfolio.github.io/",
+    github: "https://github.com/ijikim/web-portfolio.github.io",
+    file: "",
+  },
+];

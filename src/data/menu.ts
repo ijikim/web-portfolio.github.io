@@ -1,9 +1,9 @@
 export const menuData = [
   {
     id: 1,
-    title: "HOME",
+    title: "KIM IJI' PORTFOLIO",
     path: "home",
-    text: "홈",
+    text: "메인 홈",
   },
   {
     id: 2,
